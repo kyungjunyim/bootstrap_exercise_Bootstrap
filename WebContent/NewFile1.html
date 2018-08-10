@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>FileUpload 실습</title>
+</head>
+<body>
+    <h1>FileUpload 실습</h1>
+    <form action="Upload" method="post" enctype="multipart/form-data">
+    작성자<input type="text" name="theAuthor"><br>
+    파일<input type="file" name="theFile" class="file"><br>
+    <button type="button" class="btn"></button>
+    <input type="submit" value="업로드">
+    </form>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(".btn").click(function(e) {
+		console.log($(".file"));	
+	})
+	
+</script>
+</html>
